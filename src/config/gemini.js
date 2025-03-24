@@ -3,8 +3,8 @@
 
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 
-const MODEL_NAME = "gemini-1.0-pro";
-const API_KEY =" AIzaSyDMNmJ2y4JZrkyrRtSDT_r3V9LwyGzECco";
+const MODEL_NAME = "gemini-1.5-pro";
+const API_KEY =" AIzaSyCbBkpjh0dNvU2VxmGjyuzD0osl-xdbbTY";
 
 async function runChat(prompt) {
   const genAI = new GoogleGenerativeAI(API_KEY);
@@ -14,7 +14,7 @@ async function runChat(prompt) {
     temperature: 0.9,
     topK: 1,
     topP: 1,
-    maxOutputTokens: 2048,
+    maxOutputTokens: 200,
   };
 
   const safetySettings = [
