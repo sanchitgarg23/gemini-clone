@@ -58,7 +58,7 @@
 import "./Hero.css";
 import { assets } from "../../assets/assets";
 import { useContext } from "react";
-import { Context } from "../../context/Context";
+import { Context } from "../../context/MyContext";
 
 const Main = () => {
   // destructuring the object of context
